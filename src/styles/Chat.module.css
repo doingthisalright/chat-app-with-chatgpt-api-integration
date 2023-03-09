@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.chatWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.chatContainer {
+    width: 100%;
+    min-height: 50vh;
+    max-height: 80vh;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px #FFFFFF solid;
+    border-radius: 0;
+    font-size: 1rem;
+    background: #432A74;
+}
+
+.submit {
+    background: #432A74;
+    border: 1px #ffffff solid;
+    display: flex;
+    padding: 1rem;
+    border-radius: none;
+    font-size: 1rem;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.submit:hover {
+    background: #1c0a42;
+    cursor: pointer;
+}
+
+.chatMessageList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #432A74;
+}
+
+.chatMessageList :global .scrollbar-container {
+    height: auto;
+}
